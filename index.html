@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Yashodip jagtap</h1>
+        <p>A passionate Full-Stack Developer with expertise in creating scalable and dynamic web applications.</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlnEWN0XLg7UiaVE9ixLxlnoyBunnMWTslJw&s" alt="Project 1">
+                <h3>Women Fashion</h3>
+                <p>A dynamic platform showcasing women’s fashion trends, including clothing, accessories, styling tips, and an interactive
+                shopping experience.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVYdStPSRN9Cwo2n6on29_ZaAx0tjPpUJuig&s" alt="Project 2">
+                <h3>Blog Website</h3>
+                <p>A responsive blog website featuring categories, search, and comment functionality, enabling users to explore and share
+                ideas effortlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills & Endorsements</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Endorsements: <span id="html-count">5</span></p>
+                <button onclick="endorse('html-count')">Endorse</button>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Endorsements: <span id="css-count">3</span></p>
+                <button onclick="endorse('css-count')">Endorse</button>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Endorsements: <span id="js-count">7</span></p>
+                <button onclick="endorse('js-count')">Endorse</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yashodip Jagtap. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
